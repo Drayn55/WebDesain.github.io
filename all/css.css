@@ -4292,16 +4292,14 @@ form.form-footergallery::after {
   rotate: 20deg;
 }
 .bagian-10-2 {
-  scale: .2;
-  width: 200%;
-  /* background-color: red; */
-  grid-template-columns: repeat(auto-fit, minmax(50px, 40px));
+  scale: 1;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 1px));
   display: grid;
-  justify-content: center;
+  justify-items: center;
 }
 
-.bagian-10-2 {
-  display: grid;
-  gap: 40px;
+.bagian-10-2 svg {
+  scale: .2;
 }
 }
