@@ -1,10 +1,10 @@
-<?php 
+<?php
 session_start();
 // require 'login.php';
 
 if (!isset($_SESSION["login"])) {
-    header("location: login.php");
-    exit;
+  header("location: login.php");
+  exit;
 }
 
 
@@ -14,8 +14,8 @@ $mahasiswa = query("SELECT * FROM datamahasiswa");
 
 // tombol cari di tekan
 
-if ( isset($_POST["cari"])) {
-    $mahasiswa = cari($_POST["keyword"]);
+if (isset($_POST["cari"])) {
+  $mahasiswa = cari($_POST["keyword"]);
 }
 
 
@@ -29,10 +29,6 @@ if ( isset($_POST["cari"])) {
     Dryan
   </title>
   <link rel="icon" type="image/png" href="img/logo-1.png">
-
-  <!-- <a href="index.html">
-  <img src="img/logo.png" alt="">
-</a> -->
 
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,10 +85,6 @@ if ( isset($_POST["cari"])) {
     <span id="open"><svg class="opensetting" id="open" onclick="opensetting()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-1x2" viewBox="0 0 16 16">
         <path d="M6 1H1v14h5V1zm9 0h-5v5h5V1zm0 9v5h-5v-5h5zM0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm1 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1h-5z" />
       </svg>
-      <!-- <svg class="opensetting" id="open"  onclick="opensetting()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
-    <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
-    <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-    </svg> -->
     </span>
     </div>
     <!-- nafigasi di kiri -->
@@ -160,7 +152,7 @@ if ( isset($_POST["cari"])) {
       <section class="sec2home">
         <div id="sec2" class="sec2">
           <h2 class="h2sec2">LORE</h2>
-          
+
           <p class="p1sec2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et incidunt aperiam, amet
             voluptates non repudiandae dolorem dolor soluta modi vitae, cumque necessitatibus est iste quas expedita
             ipsum quo quod accusamus vel quis! Maxime, assumenda obcaecati? Temporibus obcaecati aliquid dolore dolor
@@ -179,55 +171,6 @@ if ( isset($_POST["cari"])) {
         <img src="img/shape.png" alt="" class="shape2">
 
       </section>
-      <!-- card -->
-      <!-- <div class="card"> -->
-      <!-- <div class="clmcard" id="card1">
-        <div class="editimg">
-          <img src="img/ps.jpg" alt="" class="imgcard1">
-        </div>
-        <button class="tombolcard" id="tombol1">
-          VIEW
-        </button>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-      </div> -->
-
-      <!-- <div class="clmcard" id="card2">
-        <div class="editimg">
-          <img src="img/vr.jpg" alt="" class="imgcard1">
-        </div>
-        <button class="tombolcard" id="tombol2">
-          VIEW
-        </button>
-        
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-      </div>
-      <div class="clmcard" id="card3">
-        <div class="editimg">
-          <img src="img/str.jpg" alt="" class="imgcard1">
-        </div>
-        <button class="tombolcard" id="tombol3">
-          VIEW
-        </button>
-        
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-      </div>
-      <div class="clmcard" id="card4">
-        <div class="editimg">
-          <img src="img/tgn.jpg" alt="" class="imgcard1">
-        </div>
-        <button class="tombolcard" id="tombol4">
-          VIEW
-        </button>
-        
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-      </div>
-      <div class="viewimg">
-        <span class="closeimg">X</span>
-        <img src="img/ps.jpg" alt="" class="imgcontent" id="img0">
-        <img src="img/vr.jpg" alt="" class="imgcontent" id="img0">
-      </div>
-    </div> -->
-
 
       <!-- bagian card -->
 
@@ -558,10 +501,6 @@ if ( isset($_POST["cari"])) {
           <h1>BEST BEAUTY ITEMS</h1>
           <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A quas facere dolorum eius accusamus sunt magnam
             ad ipsa iusto sequi! Lorem ipsum dolor</P>
-          <!-- <div class="isi1">
-          <button type="">start registration</button>
-          <a href="#">sign in</a>
-        </div> -->
           <div id="tombol_start_registration">
             <button class="learn-more">
               <span class="circle" aria-hidden="true">
@@ -1748,10 +1687,10 @@ if ( isset($_POST["cari"])) {
           <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
           <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
         </svg> Mode</a>
-        <a href="logout.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
-  <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
-</svg> logout</a>
+      <a href="logout.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+          <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+        </svg> logout</a>
 
     </div>
 
