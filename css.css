@@ -1,0 +1,335 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #a7a7a73a;
+}
+h1 {
+    font-family: tahoma;
+}
+.countener {
+    display: grid;
+    /* align-content: center; */
+    /* width: 100%; */
+    /* height: 100%; */
+    align-items: center;
+    /* background-color: red; */
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.boxlogin:hover {
+    opacity: 1;
+}
+.boxlogin {
+    background-color: rgba(238, 238, 238, 0.799);
+    display: grid;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.393);
+    /* width: 100%; */
+    /* height: 100%; */
+    border-radius: 20px;
+    top: 20%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    align-content: center;
+}
+.boxlogin form {
+    /* display: grid; */
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* grid-template-areas: 
+    'username username'
+    'password password'
+    'remember remember'
+    'Create Login'; */
+}
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 10px;
+    /* border-radius: 10px; */
+    margin: 5px 0 22px 0;
+    /* display: inline-block; */
+    border: none;
+    border-bottom: 3px solid rgb(0, 182, 70);
+    transition: 0.3s ease-in-out;
+    background: #ffffff;
+    font-size: 0.9rem;
+  }
+input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+}
+#password {
+    grid-area: password;
+}
+.countener {
+    background-image: url(img/bg-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+}
+#remember, #remember1{
+    position: relative;
+    left: 0%;
+    top: 8%;
+    /* bottom: 0%; */
+}
+#Create:visited {
+  color: rgb(0, 128, 23);
+}
+#Create:active {
+  color: rgb(128, 0, 0);
+  opacity: 0.2;
+}
+#Create {
+    position: absolute;
+    right: 10%;
+    text-decoration: none;
+}
+#login:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #8a8a8a;
+}
+#login {
+    position: relative;
+    /* left: 38%; */
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    font-family: cursive;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.58);
+    /* border: black; */
+    transition: 0.3s ease-in-out;
+
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.footer {
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+.flex { /*Flexbox for containers*/
+
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    text-align: center;
+  
+  }
+  
+  .waves {
+  
+    position:relative;
+  
+    width: 100%;
+  
+    height:15vh;
+  
+    margin-bottom:-7px; /*Fix for safari gap*/
+  
+    min-height:100px;
+  
+    max-height:150px;
+  
+  }
+  
+  .content {
+  
+    position:relative;
+    height:19vh;
+    /* bottom: 0; */
+    bottom: 0;
+    text-align:center;
+  
+    background-color: white;
+    top: 50px;
+  
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+  
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  
+  }
+  
+  .parallax > use:nth-child(1) {
+  
+    animation-delay: -2s;
+  
+    animation-duration: 7s;
+  
+  }
+  
+  .parallax > use:nth-child(2) {
+  
+    animation-delay: -3s;
+  
+    animation-duration: 10s;
+  
+  }
+  
+  .parallax > use:nth-child(3) {
+  
+    animation-delay: -4s;
+  
+    animation-duration: 13s;
+  
+  }
+  
+  .parallax > use:nth-child(4) {
+  
+    animation-delay: -5s;
+  
+    animation-duration: 20s;
+  
+  }
+  
+  @keyframes move-forever {
+  
+    0% {
+  
+     transform: translate3d(-90px,0,0);
+  
+    }
+  
+    100% { 
+  
+      transform: translate3d(85px,0,0);
+  
+    }
+  
+  }
+  
+  /*Shrinking for mobile*/
+  
+  @media (max-width: 768px) {
+  
+    .waves {
+  
+      height:40px;
+  
+      min-height:40px;
+  
+    }
+  
+    .content {
+  
+      height:30vh;
+  
+    }
+  
+    h1 {
+  
+      font-size:24px;
+  
+    }
+  
+  }
+
+.contenerregis {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-image: url(img/bg-registrasi.jpg);
+    background-size: cover;
+    background-position-y: -200px;
+    /* background-repeat: no-repeat; */
+    /* box-sizing: border-box; */
+}
+#Sebelum:visited {
+  color: black;
+  /* text-shadow: 5px 5px 2px rgb(0, 0, 0); */
+}
+#Sebelum:hover {
+  color: rgb(172, 255, 18);
+  transition: ease-in-out;
+  background-color: black;
+}
+#Sebelum:active {
+  color: rgb(0, 77, 128);
+  opacity: 0.2;
+}
+#Sebelum {
+  color: rgb(0, 134, 91);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  /* background-color: red; */
+  border: 1px solid black;
+  height: 40px;
+  width: 140px;
+  border-radius: 40px;
+}
+.boxregis {
+    background-color: rgba(255, 255, 255, 0.372);
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.455);
+    padding: 20px;
+    display: grid;
+    margin-top: 55px;
+    justify-items: center;
+    box-sizing: border-box;
+    position: relative;
+    /* top: 10px; */
+}
+#register:hover {
+  background-color: black;
+  color: white;
+}
+#register {
+  transition: .3s ease-in-out;
+    background-color: white;
+    font-family: cursive;
+    width: 30%;
+    margin: auto;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+  .boxlogin {
+    opacity: 1;
+  }
+  #Sebelum{
+    background-color: none;
+  }
+  .contenerregis {
+    background-position-y: -50px;
+  }
+  .boxregis {
+    background-color: rgba(255, 255, 255, 0.62);
+  }
+}
+
+@media screen and (max-width: 576px){
+  .boxlogin {
+    opacity: 1;
+  }
+  .contenerregis {
+    background-position-y: 0px;
+}
+}
